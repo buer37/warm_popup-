@@ -14,14 +14,14 @@
 
         .tip-window {
             position: fixed;
-            width: 250px;
-            height: 60px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            width: 180px;
+            height: 45px;
+            border-radius: 6px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 16px;
+            font-size: 13px;
             font-weight: 500;
             z-index: 9999;
             animation: fadeIn 0.3s ease-in;
@@ -42,15 +42,15 @@
 
         .close-btn {
             position: absolute;
-            top: 5px;
-            right: 8px;
+            top: 3px;
+            right: 5px;
             background: rgba(0, 0, 0, 0.2);
             border: none;
             border-radius: 50%;
-            width: 20px;
-            height: 20px;
+            width: 16px;
+            height: 16px;
             cursor: pointer;
-            font-size: 12px;
+            font-size: 10px;
             line-height: 1;
             color: #333;
             display: none;
@@ -140,7 +140,7 @@
     </style>
 </head>
 <body>
-    <button id="toggleBtn" onclick="togglePanel()">☰</button>
+    <!-- <button id="toggleBtn" onclick="togglePanel()">☰</button> -->
 
     <div id="control-panel" class="hidden">
         <div class="info">当前弹窗数量: <span id="count">0</span> / <span id="max">300</span></div>
@@ -182,8 +182,8 @@
             const screenHeight = window.innerHeight;
 
             // 窗口尺寸
-            const windowWidth = 250;
-            const windowHeight = 60;
+            const windowWidth = 180;
+            const windowHeight = 45;
 
             // 随机位置（确保完全显示）
             const x = Math.floor(Math.random() * (screenWidth - windowWidth));
